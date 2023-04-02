@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>1. D109:ゾロ目の日付</h1>
+	<pre><code>
+			const m = lines[0].split(' ').join('').split('').map(Number);
+			let result = "Yes";
+			for(let i = 0; i < m.length ; i++){
+				if(m[0] !==m[i]){
+					result="No" ; break;
+				}} 
+				console.log(result);</code>
+	</pre>
+	<h1> 2. D233:3人の経験値</h1>
+	<pre><code>
+				let a = parseInt(lines[0]);
+				let b = parseInt(lines[1]);
+				let c = parseInt(lines[2]);
+
+				let total = a + b + c;
+				console.log(total);
+	</code>
+	</pre>
+
+	<h1> 3. D187:【シュタゲコラボ問題】曲名の表記</h1>
+	<pre><code>
+					const songtitle = lines[0] +"/" + lines[1]
+					console.log(songtitle);
+			</code>
+			</pre>
+
+	<h1>4. D228:【2022年Xmas問題】クリスマスの時間</h1>
+	<pre><code>
+
+					// 配列の各要素を空白で分割し、数値に変換した配列を作成
+					const time = lines.map((pair) => pair.split(" ").map(Number));
+					// 初期化
+					let Christmas;
+					if (time[0][0] * 60 + time[0][1] < time[1][0] * 60 + time[1][1]) { Christmas="No" ; } else { Christmas="Yes" ; }
+						console.log(Christmas);
+				</code>
+	</pre>
+	<p>日没時刻と現在時刻を比較して、現在時刻が日没時刻よりも遅い場合は、Christmas変数を "No" に設定し、そうでなければ間に合うためChristmas変数を "Yes"に設定するコードです。<br>
+		具体的には、日没時刻と現在時刻を分単位で表し、現在時刻が日没時刻よりも遅い場合はChristmas変数を "No"に設定します。<br>
+		ここで、配列の最初の要素は日没時刻を表し、[0][0]は時、[0][1]は分を表します。同様に、配列の2番目の要素は現在時刻を表し、[1][0]は時、[1][1]は分を表します。<br>
+		例えば、日没時刻が "22 00" で現在時刻が"23 30"の場合、日没時刻は22時0分、現在時刻は23時30分となります。<br>
+		これを分単位に変換すると、日没時刻は1320分、現在時刻は1410分となります。この場合、現在時刻が日没時刻よりも遅いため、Christmas変数には "No"が設定されます。</p>
+	<h1>5. D142:【キャンペーン問題】イルミネーションの数</h1>
+	<pre><code>
+	const tree = lines[0].split(" ").map(Number);
+	const denshoku = Math.ceil(tree[0] / tree[1]);
+	const denshokumath = denshoku * tree[2]
+	console.log(denshokumath);
+</code>
+	</pre>
+
+	<h1>6. C097:プレゼント応募企画の実施</h1>
+	<pre><code>
+
+	</code></pre>
+	<h1> 7. C016:Leet文字列</h1>
+	<pre><code>
+
+		</code></pre>
+
+	<h1>8. C017:ハイアンドロー・カードゲーム</h1>
+	<pre><code>
+
+		</code></pre>
+
+</body>
+
+</html>
